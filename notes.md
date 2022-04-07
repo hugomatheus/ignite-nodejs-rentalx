@@ -362,3 +362,16 @@ O arquivo final vai ficar assim:
 ```
 
 E a configuração está finalizada. Para garantir que o código seja formatado corretamente, você pode abrir os arquivos do projeto e salvar eles novamente.  
+
+
+
+## instalando ts-node-dev (ferramenta para realizar a conversão de ts para js automaticamente em desenvolvimento)
+yarn add ts-node-dev -D
+
+Add em package.json
+
+```
+"scripts": {
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+  },
+```  
