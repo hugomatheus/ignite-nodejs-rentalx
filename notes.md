@@ -375,3 +375,11 @@ Add em package.json
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
   },
 ```  
+
+## Desabilitar o strict em tsconfig
+//  "strict": true,
+
+
+## Utilizando uuid
+yarn add uuid
+yarn add @types/uuid -D
