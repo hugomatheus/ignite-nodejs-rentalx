@@ -390,3 +390,7 @@ yarn add @types/multer -D
 
 ## Utilizando csv-parse
 yarn add csv-parse
+
+## Utilizando swagger para documentação
+yarn add swagger-ui-express
+yarn add @types/swagger-ui-express -D
