@@ -383,3 +383,10 @@ Add em package.json
 ## Utilizando uuid
 yarn add uuid
 yarn add @types/uuid -D
+
+## Utilizando multer (upload)
+yarn add multer
+yarn add @types/multer -D
+
+## Utilizando csv-parse
+yarn add csv-parse
