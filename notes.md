@@ -384,7 +384,7 @@ Add em package.json
 yarn add uuid
 yarn add @types/uuid -D
 
-## Utilizando multer (upload)
+## Utilizando multer (upload - criar pasta tmp na raiz do projeto)
 yarn add multer
 yarn add @types/multer -D
 
