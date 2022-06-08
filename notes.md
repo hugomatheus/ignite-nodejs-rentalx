@@ -394,3 +394,49 @@ yarn add csv-parse
 ## Utilizando swagger para documentação
 yarn add swagger-ui-express
 yarn add @types/swagger-ui-express -D
+
+## Utilizando docker no projeto
+- instalar docker
+- instalar docker-compose
+- foi criado o arquivo Dockerfile e o docker-compose
+
+comandos:
+
+subir todos os serviços:
+docker-compose up -d 
+
+parar os serviços
+docker-compose stop
+
+remover os serviços
+docker-compose dowm
+
+acessar determinado serviço
+docker-compose exec [nome_serviço] bash
+docker-compose exec app bash
+
+ou
+
+docker exec -it [nome_container] /bin/bash
+
+
+visualizar os logs:
+docker logs rocketseat-rentalx -f
+
+acessar o container:
+docker-compose exec app bash
+
+listagem dos container em execução 
+docker ps
+
+listagem de todos os containers
+docker ps -a
+
+remover container
+docker rm id_container
+
+startar container
+docker start id_container
+
+parar container
+docker stop id_container
