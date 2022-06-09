@@ -440,3 +440,32 @@ docker start id_container
 
 parar container
 docker stop id_container
+
+docker-compose up -d —force-recreate 
+
+
+#Usando typeORM
+https://typeorm.io/
+
+yarn add typeorm
+yarn add reflect-metadata
+
+importar reflect-metadata no server.ts
+
+postgres drive
+yarn add pg 
+
+tsconfig.json:
+
+"emitDecoratorMetadata": true,
+"experimentalDecorators": true,
+
+add script no package.json
+"typeorm": "typeorm-ts-node-commonjs"
+
+rodar:
+yarn typeorm
+
+# Migrations
+ criar:
+ yarn typeorm migration:create -n src/database/migrations/CreateCategories
