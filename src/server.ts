@@ -6,6 +6,7 @@ import { router } from "./routes";
 import swaggerDocument from "./swagger.json";
 
 createConnection();
+
 const app = express();
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));

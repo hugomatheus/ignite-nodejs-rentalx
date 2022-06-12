@@ -37,9 +37,11 @@ class ImportCategoryUseCase {
     categories.map(async (category) => {
       const { name, description } = category;
 
-      const categoryAlreadyExists = this.categoryRepository.findByName(name);
+      const categoryAlreadyExists = await this.categoryRepository.findByName(
+        name
+      );
       if (!categoryAlreadyExists) {
-        this.categoryRepository.create({ name, description });
+        await this.categoryRepository.create({ name, description });
       }
 
       return category;
