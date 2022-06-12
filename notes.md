@@ -467,5 +467,14 @@ rodar:
 yarn typeorm
 
 # Migrations
- criar:
- yarn typeorm migration:create -n src/database/migrations/CreateCategories
+ 
+ criando scripts no package.json
+
+ rodar as migrations
+ yarn migration:run
+
+ reverter migrations
+ yarn migration:revert
+
+ criar migration
+ yarn migration:create src/database/migration/NomeMigration
